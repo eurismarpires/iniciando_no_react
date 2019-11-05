@@ -2,8 +2,9 @@ import React from 'react';
 import Comment from './Comment';
 export default class Post extends React.Component{
    
-    constructor(props){
-        super(props);
+    //o método constructor será executado toda vez que um novo post for instanciado
+    constructor(props){ //passa a propriedade para a ...
+        super(props);  //...classe pai
         console.log(this.props);
         this.state = {
             comments: [],
